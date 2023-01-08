@@ -8,6 +8,7 @@ const NETWORKS = {
   5: "Goerli Test Network",
   42: "Kovan Test Network",
   56: "Binance Smart Chain",
+  11155111: "Sepolia",
   1337: "Ganache",
 };
 
@@ -54,7 +55,7 @@ export const handler = (web3, contract) => () => {
     }
   );
 
-  const targetNetwork = NETWORKS["42"];
+  const targetNetwork = NETWORKS["11155111"];
 
   return {
     data,
